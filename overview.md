@@ -20,10 +20,10 @@ Find the application [here](https://docs.google.com/forms/d/1cuLBIPhcqxmHgObiaMz
 
 The purpose of this course is to provide a means to learn more about technology and specifically, the fundamentals for web development. Many students who have some previous background in front-end development or business development are curious about backend-development and what is involved in building a web application. Rather than relying on other programmers to build your idea, these students are encouraged to learn by themselves. However, CS classes do not focus heavily on web development for non-CS students. Dev bootcamp classes are too expensive and intense for a general curiosity. And of course self-study can be a frustrating process that can stifle all of the fun. Thus, this class was born to provide students an opportunity to learn a new skill with the help of peers and student instructors as an introduction to application development.
 
-Tentative Schedule: January 12th 2015 - March 5th 2015, Mondays and Thursdays 7:30 - 8:30 pm
+Tentative Schedule: January 5th 2015 - March 5th 2015, Mondays and Thursdays 7:30 - 8:30 pm
 Tentative Location: CSIL Lab 3
 
-This curriculum for this course is designed for two 60-minute classes each week for 9 weeks (2nd to 9th week). We will cover the basics of HTML/CSS/Javascript for the first day. We will cover Ruby and the syntax for the next 3 sessions. After that, we will cover Rails and how to transform an idea into a web app.
+This curriculum for this course is designed for two 60-minute classes each week for 9 weeks (1st to 9th week). We will cover the basics of HTML/CSS/Javascript for the first day. We will cover Ruby and the syntax for the next 3 sessions. After that, we will cover Rails and how to transform an idea into a web app.
 ## **Learning Outcomes**
 
 Upon completion of this course you will be able to:
@@ -41,9 +41,9 @@ Upon completion of this course you will be able to:
 
 ## **Syllabus**
 
-#Web Development Fundamentals | Fall 2014
+#Web Development Fundamentals | Winter 2015
 
-**Schedule:** *M, TR 7:30 - 8:30 in CSIL* (3rd - 9th weeks)
+**Schedule:** *M, TR 7:30 - 8:30 in CSIL* (1st - 9th weeks)
 
 -----------------------------------------------------------
 
@@ -63,7 +63,7 @@ Find the application [here](https://docs.google.com/forms/d/1cuLBIPhcqxmHgObiaMz
 
 The purpose of this course is to provide a means to learn more about technology and specifically, the fundamentals for web development. Many students who have some previous background in front-end development or business development are curious about backend-development and what is involved in building an application. Rather than relying on other programmers to build your idea, these students are encouraged to learn by themselves. However, CS classes do not focus heavily on web development for non-CS students. Dev bootcamp classes are too expensive and intense for a general curiosity. And of course self-study can be a frustrating process that can stifle all of the fun. Thus, this class was born to provide students an opportunity to learn a new skill with the help of peers and student instructors as an introduction to application development.
 
-This curriculum for this course is designed for two 60-minute classes each week for 7 weeks (3rd to 9th week). Some programming background is recommended since the material will be covered briefly at a quick pace. The first session for the week will be more lecture-based while the second session for the week is more focused on student collaboration on practice exercises.
+This curriculum for this course is designed for two 60-minute classes each week for 9 weeks (1st to 9th week). Some programming background is recommended since the material will be covered briefly at a quick pace. The first session for the week will be more lecture-based while the second session for the week is more focused on student collaboration on practice exercises.
 
 ## **Learning Outcomes**
 
@@ -80,9 +80,13 @@ Upon completion of this course you will be able to:
 
 ## **Syllabus**
 
+**Week 1: Introduction to HTML/CSS**
+  - Navigating the file system
+  - Writing HTML/CSS
+  - Basic javascript
+
 **Week 2: Introduction to Ruby**
   - Learning basic commands and conventions
-  - Navigating the file system
   - Basics of ruby as a language
   - Using IRB as a playground
   - Writing your first program
