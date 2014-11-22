@@ -114,11 +114,11 @@ Upon completion of this course you will be able to:
   - Rails helper methods
   - Edit and update actions
 
-**Week 8: **
+**Week 8:**
   - Destroy action
   - Scaffolding
 
-**Week 9: **
+**Week 9:**
   - Using the Facebook API
   - Javascript and Google Maps
 
