@@ -1,0 +1,13 @@
+body {
+  background-color: grey; /* Sets the background color */
+}
+a {
+  text-decoration: none; /* Removes the underline */
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+.teachers {
+  border: 1px solid black;
+}
