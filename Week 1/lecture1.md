@@ -105,6 +105,8 @@ There are many more HTML elements to explore and use. Find a complete list [here
 
 In the head section of the page, we are going to open a new set of tags called style. Everything inside of these brackets will be the CSS language, not the HTML language.
 
+![Example](http://bit.ly/13s9rh5)
+
 Let's make the background of this page grey. To do that we need to have:
 
 ```
@@ -150,6 +152,6 @@ So now we have a HTML file and a CSS file.
 
 <hr>
 Practice
-* [Shaw Howe's Tutorials](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
-* [CodeAcademy Lesson](http://www.codecademy.com/tracks/web)
-* [Odin Project](http://www.theodinproject.com/web-development-101/html-and-css-basics)
+* [Shaw Howe's Tutorials](http://learn.shayhowe.com/html-css/building-your-first-web-page/): Highly recommended
+* [CodeAcademy Lesson](http://www.codecademy.com/tracks/web): If you have time
+* [Odin Project](http://www.theodinproject.com/web-development-101/html-and-css-basics): Bonus material
