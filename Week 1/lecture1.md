@@ -10,7 +10,7 @@ Rails is a framework used to make web apps. Similar to having a pre-made frame t
 
 Ruby is the name of the language we write our files in.
 
-We'll loosely be following a series of screencasts: [http://ruby-kickstart.com/](http://ruby-kickstart.com/)
+
 
 ## Let's Get Started
 
@@ -151,7 +151,14 @@ Now, remove the `<style>` tag and instead put `<link rel="stylesheet" name="text
 So now we have a HTML file and a CSS file.
 
 <hr>
-Practice
-* [Shaw Howe's Tutorials](http://learn.shayhowe.com/html-css/building-your-first-web-page/): Highly recommended
-* [CodeAcademy Lesson](http://www.codecademy.com/tracks/web): If you have time
-* [Odin Project](http://www.theodinproject.com/web-development-101/html-and-css-basics): Bonus material
+
+##To Do For Thursday##
+
+1. Download a text editor on your personal computer if you don't have one.
+  * [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com/), [Textmate](http://macromates.com/)
+2. Open the command prompt on your own computer and practice a few commands.
+  * Extra [material](http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux) from CodeAcademy for **Linux**
+3. Practice HTML/CSS
+  * [Shaw Howe's  Tutorials](http://learn.shayhowe.com/html-css/building-your-first-web-page/): Highly recommended
+  * [CodeAcademy Lesson](http://www.codecademy.com/tracks/web): If you have time
+  * [Odin Project](http://www.theodinproject.com/web-development-101/html-and-css-basics): Bonus material
