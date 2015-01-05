@@ -30,7 +30,7 @@ puts my_first_array[1]
 
 ## Blocks
 
-Block syntax uses either do..end or curly braces ({}), like so:
+Block syntax uses either do..end or curly braces {}, like so:
 
 ```
 [1, 2, 3].each do |num|
