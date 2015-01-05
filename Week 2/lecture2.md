@@ -33,7 +33,7 @@ f.puts "first line"
 
 ##Extended Exercise Part 1##
 
-> Read in the contents of the input.txt (available [here](https://raw.githubusercontent.com/edge-academy/Winter-2015-Web-Development-Fundamentals/master/Week%202/input.txt)). How many lines are there? How many words are there?
+> Read in the contents of the input.txt (available [here](https://raw.githubusercontent.com/edge-academy/Winter-2015-Web-Development-Fundamentals/progress/Week%202/input.txt)). How many lines are there? How many words are there?
 
 ###Sample Solution###
 *(FYI, this will only work if you already a file called input.txt in the same directory where you run this Ruby code)*
