@@ -8,9 +8,15 @@ Shaan Sapra
 
 ## **Class Details**
 
-Monday/Thursday : 6:30 - 7:30 pm
+When: 
 
-2nd week to 9th week (1/12/15 - 3/5/15)
+    Monday/Thursday: 7:30 - 8:30 pm
+
+    2nd week to 9th week (1/12/15 - 3/5/15)
+  
+Where:
+
+    CSIL Lab 3 in Crerar Library (5730 South Ellis Avenue, Chicago, IL 60637)
 
 ## **Objective**
 
