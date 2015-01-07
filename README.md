@@ -6,6 +6,12 @@ Shaan Sapra
 
 (630) 696 8303
 
+## **Class Details**
+
+Monday/Thursday : 6:30 - 7:30 pm
+
+2nd week to 9th week (1/12/15 - 3/5/15)
+
 ## **Objective**
 
 The purpose of this course is to provide a means to learn more about technology and specifically, the fundamentals for web development. Many students who have some previous background in front-end development or business development are curious about backend-development and what is involved in building an application. Rather than relying on other programmers to build your idea, these students are encouraged to learn by themselves. However, CS classes do not focus heavily on web development for non-CS students. Dev bootcamp classes are too expensive and intense for a general curiosity. And of course self-study can be a frustrating process that can stifle all of the fun. Thus, this class was born to provide students an opportunity to learn a new skill with the help of peers and student instructors as an introduction to application development.
