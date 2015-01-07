@@ -1,9 +1,3 @@
-#Web Development Fundamentals | Winter 2015
-
-**Schedule:** *M, TR 7:30 - 8:30 in CSIL* (1st - 9th week)
-
------------------------------------------------------------
-
 ####Course Instructor
 
 Shaan Sapra
@@ -11,53 +5,6 @@ Shaan Sapra
 [ssapra@uchicago.edu](mailto:ssapra@uchicago.edu)
 
 (630) 696 8303
-
-## **Application**
-
-Find the application [here](https://docs.google.com/forms/d/1cuLBIPhcqxmHgObiaMzArTyrKOUbQYn90Bbcnk8ZQik/viewform)
-
-## **Objective**
-
-The purpose of this course is to provide a means to learn more about technology and specifically, the fundamentals for web development. Many students who have some previous background in front-end development or business development are curious about backend-development and what is involved in building a web application. Rather than relying on other programmers to build your idea, these students are encouraged to learn by themselves. However, CS classes do not focus heavily on web development for non-CS students. Dev bootcamp classes are too expensive and intense for a general curiosity. And of course self-study can be a frustrating process that can stifle all of the fun. Thus, this class was born to provide students an opportunity to learn a new skill with the help of peers and student instructors as an introduction to application development.
-
-Tentative Schedule: January 5th 2015 - March 5th 2015, Mondays and Thursdays 7:30 - 8:30 pm
-Tentative Location: CSIL Lab 3
-
-This curriculum for this course is designed for two 60-minute classes each week for 9 weeks (1st to 9th week). We will cover the basics of HTML/CSS/Javascript for the first day. We will cover Ruby and the syntax for the next 3 sessions. After that, we will cover Rails and how to transform an idea into a web app.
-## **Learning Outcomes**
-
-Upon completion of this course you will be able to:
-
-- Understand the command prompt and navigate the file system
-- Use a text editor to write code
-- Learn the basics of Ruby syntax and methodologies
-- How to write clean, effective, modular code
-- Workwith files and scripts
-- Understand basic algorithms and data structures
-- Understand how RCAV works
-- Build an application that uses CRUD
-- Learn the Golden Seven routes
-
-
-## **Syllabus**
-
-#Web Development Fundamentals | Winter 2015
-
-**Schedule:** *M, TR 7:30 - 8:30 in CSIL* (1st - 9th weeks)
-
------------------------------------------------------------
-
-####Course Instructor
-
-Shaan Sapra
-
-[ssapra@uchicago.edu](mailto:ssapra@uchicago.edu)
-
-(630) 696 8303
-
-## **Application**
-
-Find the application [here](https://docs.google.com/forms/d/1cuLBIPhcqxmHgObiaMzArTyrKOUbQYn90Bbcnk8ZQik/viewform)
 
 ## **Objective**
 
@@ -80,24 +27,18 @@ Upon completion of this course you will be able to:
 
 ## **Syllabus**
 
-**Week 1: Introduction to HTML/CSS**
+**Week 2: Introduction to Frontend and Ruby**
   - Navigating the file system
   - Writing HTML/CSS
-  - Basic javascript
-
-**Week 2: Introduction to Ruby**
-  - Learning basic commands and conventions
-  - Basics of ruby as a language
+  - Ruby datatypes
   - Using IRB as a playground
-  - Writing your first program
 
-**Week 3: Ruby Datatypes**
-  - Arrays, Hashes, Sets
-  - Methods and parameters
+**Week 3: Formal Introduction to Ruby**
+  - Arrays and Hashes
   - Control flow and loops
   - Enumerable methods
 
-**Week 4: Everything is an Object**
+**Week 4: Ruby Object Oriented Design**
   - Implementing a class
   - Object instantiation
   - Getter and setter methods
