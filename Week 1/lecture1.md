@@ -133,11 +133,11 @@ Let's say we have another list of names:
   <li>Malika</li>
 </ul>
 ```
-and we want to wrap this list in a black box. How can we specify this list and not the list of colors. We can add a class to this `<ul>` and make it `<ul class="teachers">`
+and we want to wrap this list in a black box. How can we specify this list and not the list of colors. We can add an id to this `<ul>` and make it `<ul id="teachers">`
 
 Now in our CSS, we can specify:
 ```
-.teachers {
+#teachers {
   border: 1px solid black;
 }
 ```
