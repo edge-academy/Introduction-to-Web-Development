@@ -214,3 +214,12 @@ Example: `print_longest("dog", "cat", "horse") # => "horse"`
 Example: `print_bigger(3, 4) # => 4`
 
 <hr>
+
+[Solutions](https://github.com/edge-academy/Introduction-to-Web-Development/blob/master/Week%201/lecture2answers.rb) available here.
+
+##To Do For Monday##
+
+Practice Ruby
+* [TryRuby.org](http://tryruby.org/levels/1/challenges/0): Short and sweet
+* [CodeAcademy Lesson](http://www.codecademy.com/en/tracks/ruby): If you have time
+* [Odin Project](http://www.theodinproject.com/ruby-programming/ruby-building-blocks): Bonus material
