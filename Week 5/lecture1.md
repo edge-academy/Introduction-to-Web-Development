@@ -109,7 +109,7 @@ Let's add some HTML to create a form so that we can submit movie details.
 <h1>New Movie</h1>
 <form action="/create_movie">
   <label>Name</label>
-  <input type="text" desc="name"/>
+  <input type="text" name="name"/>
 </form>
 ```
 
