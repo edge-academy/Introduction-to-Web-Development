@@ -200,6 +200,7 @@ If we click that, we see that actors index page rendered. Now how can we use the
 
 ##Exercise##
 Modify the index action of the ActorsController so that either all actors are shown or only the actors for a specifc movie are shown
-1. Check if params[:movie_id] is present
-2. If not, generate a list of all actors and pass that to the view
-3. If it is, then find the correct movie based on the parameter, and generate a list of all actors for that movie and pass that to the view.
+
+1.  Check if params[:movie_id] is present
+2.  If not, generate a list of all actors and pass that to the view
+3.  If it is, then find the correct movie based on the parameter, and generate a list of all actors for that movie and pass that to the view.
