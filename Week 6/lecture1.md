@@ -167,10 +167,11 @@ NOTE: This is an example for the car_type parameter. Don't copy this exact HTML 
 
 ##Exercise##
 Build this for our movies. Don't just list the movies manually.
-1. Generate a list of all movies in the controller (edit action)
-2. Pass that list to the view.
-3. Setup a select tag for movie_id
-4. Iterate through the movies and create an option for each one, where the value is the id and displayed text is the movie name
+
+1.  Generate a list of all movies in the controller (edit action)
+2.  Pass that list to the view.
+3.  Setup a select tag for movie_id with name="actor[movie_id]"
+4.  Iterate through the movies and create an option for each one, where the value is the id and displayed text is the movie name
 
 ##Building the association
 Now that we've built a way for us to correctly set the movie id for each actor, we need a way to get a list of actors given a movie.
