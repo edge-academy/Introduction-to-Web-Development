@@ -79,7 +79,7 @@ Now we are going to use the rails generator to build out everything (routes, con
 
 In the command line, type:
 ```
-rails generate scaffold Actor name movie_id:integer
+rails generate scaffold Actor name:string movie_id:integer
 ```
 
 First, let's check out the new migration file that is created.
@@ -163,6 +163,7 @@ Instead, we want a select tag to list all the options in a dropdown and we selec
   <option value="audi">Audi</option>
 </select>
 ```
+NOTE: This is an example for the car_type parameter. Don't copy this exact HTML but follow the format.
 
 ##Exercise##
 Build this for our movies. Don't just list the movies manually.
