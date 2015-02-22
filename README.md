@@ -1,3 +1,13 @@
+#Spring 2015
+
+> Tentative Schedule: April 7, 2015 - May 26, 2015, Mondays and Thursdays 6:00 - 7:00 pm
+
+> Tentative Location: Chicago Innovation Exchange (1452 E. 53rd Street, Chicago, IL, 60615, cie.uchicago.edu)
+
+For those who are interested in taking this class in Spring, please apply [here](https://docs.google.com/forms/d/1QeCqzknNeT--OpDud7a3PtjrAy-nccETGZ8NybCOdTw/viewform). Feel free to look through material from the current quarter to assess the level of difficulty of the material.
+
+# Winter 2015
+
 ####Course Instructor
 
 Shaan Sapra
@@ -8,12 +18,12 @@ Shaan Sapra
 
 ## **Class Details**
 
-When: 
+When:
 
     Monday/Thursday: 7:30 - 8:30 pm
 
     2nd week to 9th week (1/12/15 - 3/5/15)
-  
+
 Where:
 
     CSIL Lab 3 in Crerar Library (5730 South Ellis Avenue, Chicago, IL 60637)
@@ -22,7 +32,7 @@ Where:
 
 The purpose of this course is to provide a means to learn more about technology and specifically, the fundamentals for web development. Many students who have some previous background in front-end development or business development are curious about backend-development and what is involved in building an application. Rather than relying on other programmers to build your idea, these students are encouraged to learn by themselves. However, CS classes do not focus heavily on web development for non-CS students. Dev bootcamp classes are too expensive and intense for a general curiosity. And of course self-study can be a frustrating process that can stifle all of the fun. Thus, this class was born to provide students an opportunity to learn a new skill with the help of peers and student instructors as an introduction to application development.
 
-This curriculum for this course is designed for two 60-minute classes each week for 9 weeks (1st to 9th week). Some programming background is recommended since the material will be covered briefly at a quick pace. The first session for the week will be more lecture-based while the second session for the week is more focused on student collaboration on practice exercises.
+This curriculum for this course is designed for two 60-minute classes each week for 8 weeks (2nd to 9th week). Some programming background is recommended since the material will be covered briefly at a quick pace.
 
 ## **Learning Outcomes**
 
@@ -34,8 +44,8 @@ Upon completion of this course you will be able to:
 - How to write clean, effective, modular code
 - Workwith files and scripts
 - Understand basic algorithms and data structures
-- Use Git as a version control system to upload your code
-- Learn the basics of web programming through Sinatra
+- Writing a full Rails application with the Golden Seven
+- Interact with the Facebook API
 
 ## **Syllabus**
 
@@ -60,24 +70,18 @@ Upon completion of this course you will be able to:
   - Using Nitrous
   - Creating your first app
   - RCAV
-
-**Week 6: Beginning CRUD**
-  - Golden Seven
   - Index and show actions
-  - Links
 
-**Week 7: More CRUD**
+**Week 6: Learning CRUD**
   - New and create actions
   - Rails helper methods
   - Edit and update actions
-
-**Week 8:**
   - Destroy action
-  - Scaffolding
 
-**Week 9:**
-  - Using the Facebook API
-  - Javascript and Google Maps
+**Week 7: Associations and APIs**
+  - Scaffolding
+  - IMDB clone
+  - Facebook API
 
 ## **Learning Resources**
 
