@@ -10,9 +10,11 @@ cd GeoFacebook
 bundle install
 ```
 
+In this application, I've already set up the basic Javascript that will initialize the API for both Google Maps and Facebook. In addition, I've left the exact tokens required as *environment variables*. This way I can share this app with you, but you are required to plug in your own values in order for the app to work.
+
 ## Setting up Facebook Log in
 1. Go to https://developers.facebook.com in a new tab.
-2. Click My Apps and then find the app that we created last week.
+2. Click My Apps and then create a new app. Fill out the name of your app and choose a category.
 3. Copy your App ID.
 6. Create a new file in Nitrous at `config/initializers/my_vars.rb`.
 4. Paste it in `config/initializers/my_vars.rb` so that we have
@@ -20,6 +22,8 @@ bundle install
     ```
       ENV['FACEBOOK_APP_ID'] = "YOUR FACEBOOK APP ID"
     ```
+
+    ENV is a hash (you should recognize the square brackets that we are using to set the value for a key). We are setting our app id in the ENV hash with the key 'FACEBOOK_APP_ID'. You can find this key being used in the Facebook script `app/assets/javascripts/facebook.js.erb`.
 
 ## Setting up the Google Maps API
 1. Visit the [Google APIs Console](https://code.google.com/apis/console/?noredirect) and log in with your Google Account.
@@ -31,13 +35,19 @@ bundle install
 7. Paste it in the same initializer file so we have:
 
     ```
-      ENV['GOOGLE_API_KEY'] = "YOUR GOOGLE API KEY"
       ENV['FACEBOOK_APP_ID'] = "YOUR FACEBOOK APP ID"
+      ENV['GOOGLE_API_KEY'] = "YOUR GOOGLE API KEY"
     ```
+
+    Now we have 2 keys that we have set in the ENV hash. The second key is being used in `app/views/layouts/application.html.erb` to load the Google Maps API scripts.
 
 ## Test it out
 1. Finally, let's run the server by typing `rails server` in the console.
 2. Open the app on Port 3000, log into Facebook, and let's see the map.
+
+    When the server is run, our initializer file is part of the "bootup" for the app, so those keys are included in the hash and will stay there. If we want to change the code in the initializer file that we created, you'll have to restart the server so that the rails server bootu p process will load the changes.
+
+3. We can confirm that our keys are in the ENV hash by opening up the rails console and typing in ENV. Among the list of key-value pairs, you should see the two that we added.
 
 ## Placing a Marker
 1. Examples for reference are available [here](https://developers.google.com/maps/documentation/javascript/examples/marker-simple)
@@ -54,7 +64,7 @@ bundle install
 5. Check it out!
 
 ## Facebook Data
-1. We're going to add this functions to `app/assets/javascripts/application.js`.
+1. We're going to add these functions to `app/assets/javascripts/application.js`.
 
     ```
       function buildMap(response){
@@ -74,7 +84,9 @@ bundle install
         FB.api('/me/tagged_places', buildMap);
       }
     ```
-2. We will also add the function call for makeRequests to the end of the `statusChangeCallback` function in the `facebook.js.erb` file.
+
+    makeRequests() is a function that makes 3 requests to the Facebook API to retrieve data about your events and their venues, your statuses, and your tagged places. When Facebook comes back with data, the code will call the callback function which we've named buildMap. buildMap takes one parameter which we named response. Our job is to see how to play with the response variable and retrieve the location data inside.
+2. We will also add the function call for makeRequests to the end of the `statusChangeCallback` function in the `facebook.js.erb` file. This means that once the Facebook javascript code determines that we are logged in and connected, then it'll immediately make the call to makeRequests() to make the API requests to the Graph API.
 3. If we refresh the page, we'll see in the Javascript console (click View->Developer->Javascript console), that we can see the response printed out for each request that's made.
 4. Our job is to dig into that's bundles of data and extract some latitude and longitudes and place a marker for each one.
 
