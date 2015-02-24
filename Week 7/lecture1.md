@@ -10,7 +10,7 @@ cd GeoFacebook
 bundle install
 ```
 
-In this application, I've already set up the basic Javascript that will initialize the API for both Google Maps and Facebook. In addition, I've left the exact tokens required as *environment variables*. This way I can share this app with you, but you are required to plug in your own values in order for the app to work.
+In this application, I've already set up the basic Javascript that will initialize the API for both Google Maps and Facebook. In addition, I've left the exact tokens required as **environment variables**. This way I can share this app with you, but you are required to plug in your own values in order for the app to work.
 
 ## Setting up Facebook Log in
 1. Go to https://developers.facebook.com in a new tab.
