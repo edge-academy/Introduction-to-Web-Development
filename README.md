@@ -1,12 +1,4 @@
-#Spring 2015
-
-> Tentative Schedule: April 7, 2015 - May 26, 2015, Mondays and Thursdays 6:00 - 7:00 pm
-
-> Tentative Location: Chicago Innovation Exchange (1452 E. 53rd Street, Chicago, IL, 60615, cie.uchicago.edu)
-
-For those who are interested in taking this class in Spring, please apply [here](https://docs.google.com/forms/d/1QeCqzknNeT--OpDud7a3PtjrAy-nccETGZ8NybCOdTw/viewform). Feel free to look through material from the current quarter to assess the level of difficulty of the material.
-
-# Winter 2015
+# Spring 2015
 
 ####Course Instructor
 
@@ -20,13 +12,15 @@ Shaan Sapra
 
 When:
 
-    Monday/Thursday: 7:30 - 8:30 pm
+    Monday/Thursday: 6:00 - 7:00 pm
 
-    2nd week to 9th week (1/12/15 - 3/5/15)
+    2nd week to 9th week (4/7/15 - 5/26/15)
 
 Where:
 
-    CSIL Lab 3 in Crerar Library (5730 South Ellis Avenue, Chicago, IL 60637)
+    Washington Park Classroom
+    Chicago Innovation Exchange (1452 E. 53rd Street)
+    Directions: cie.uchicago.edu/directions
 
 ## **Objective**
 
@@ -49,39 +43,44 @@ Upon completion of this course you will be able to:
 
 ## **Syllabus**
 
-**Week 2: Introduction to Frontend and Ruby**
-  - Navigating the file system
-  - Writing HTML/CSS
+**Week 1: Introduction to Ruby**
   - Ruby datatypes
   - Using IRB as a playground
+  - Navigating the file system
 
-**Week 3: Formal Introduction to Ruby**
+**Week 2: Ruby Data Structures**
   - Arrays and Hashes
   - Control flow and loops
   - Enumerable methods
 
-**Week 4: Ruby Object Oriented Design**
+**Week 3: Object Oriented Programming**
   - Implementing a class
   - Object instantiation
   - Getter and setter methods
   - Instance and class methods
 
-**Week 5: Introduction to Rails**
-  - Using Nitrous
+**Week 4: Introduction to Rails**
   - Creating your first app
-  - RCAV
+  - RCAV pathway
   - Index and show actions
 
-**Week 6: Learning CRUD**
+**Week 5: Learning CRUD**
   - New and create actions
   - Rails helper methods
   - Edit and update actions
   - Destroy action
 
-**Week 7: Associations and APIs**
+**Week 6: Associations**
   - Scaffolding
+  - More complex forms
   - IMDB clone
+
+**Week 7: APIs**
   - Facebook API
+  - Parsing JSON
+  - Google Maps API
+
+**Week 8: Misc/Extra**
 
 ## **Learning Resources**
 
@@ -99,4 +98,4 @@ Upon completion of this course you will be able to:
 
 ## **Attendance**
 
-While this is not an official class and no grades or course credits are confererd, please make your best effort to be present and on time to each class.  There are unfortunately a limited number of seats in CSIL (20), and there is high demand to learn the basics of creating website and web applications.  Respect your peers, if you can't/won't make the class, please leave the spot for someone else to reserve.
+While this is not an official class and no grades or course credits are conferred, please make your best effort to be present and on time to each class.

@@ -2,163 +2,190 @@
 
 ##Overview##
 
-###What we're going to learn and why###
+##What is Ruby##
 
-So, what is a web app? Any software that runs in a web browser is a web app. At its core, a web app is a bunch of folders and files that interact to make that software.
+Ruby is a general purpose programming language created in the 1990s by Yukihiro “Matz” Matsumoto. It’s also one of the best languages to start with when you’re first learning to code. Ruby is a language of careful balance. Its creator blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.
 
-Rails is a framework used to make web apps. Similar to having a pre-made frame to make the house. Instead of having to worry about the basic infrastructure, we can focus on more interesting aspects of building.
+He has often said that he is “trying to make Ruby natural, not simple,” in a way that mirrors life.
 
-Ruby is the name of the language we write our files in.
+##Why Ruby##
 
+**It's easier to learn than other languages**
 
-
-## Let's Get Started
-
-###Command Prompt###
-
-* this is where programmers live
-* manipulate folders and files
-* examine processes and network diagnostics
-
-![Example](http://upload.wikimedia.org/wikipedia/commons/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png)
-
-###Important Commands (Linux/Unix)###
-
-It will usually list the computer name, or yourname @ yourcomputer and there will be some kind of punctuation mark like a $ or a # followed by a blinking box or line-shaped cursor. That blinking thing is called a prompt because it is prompting you to give it a command.
-
-* **pwd**: tells you where you are in the current file system
-* **ls**: lists all the files and folders at the current location
-* **mkdir**: creates a new folder at the current location
-* **cd**: allows you to change directory (go inside a folder or go back up a level)
-* **man**: manual that explains possible commands
-
-We will continue practicing these commands and many more throughout the class.
-
-##Switching gears##
-
-###HTML###
-
-HTML is the markup that contains all the actual stuff that a web page has. All the text on this page you're reading right now lives inside HTML tags that tell your browser how to order the content on the page. Right click any element on the page and choose "Inspect Element" to open up your browser's Developer Tools and it will show you the structure of the page.
-
-###CSS###
-
-CSS tells the browser if you want to display any of those tags a particular way like, for instance, turning its background blue and pushing it a little to the left. In your developer tools, you can see the css styles in another panel, usually showing which specific properties were inherited from which lines of CSS.
-
-###Let's create our first webpage###
-
-1. Install a text editor if you haven't (Atom, Sublime Text, Textmate)
-2. Open the text editor and create a file called index.html. **Save it to your Desktop**.
-3. Type `This is my first web page`.
-4. Now open a web browser (Chrome, Firefox, Safari) and type `~/Desktop/index.html` into the address bar.
-5. You should see your text in the browser window.
-6. Congrats! Let's keep going.
-
-Let's actually tell the browser that we are putting HTML in this file.
-
-Remove what you typed earlier and let's put this in the file:
+C++ example
 ```
-<!DOCTYPE html>
+#include <iostream>
+using namespace std;
 
-<html>
-
-</html>
-```
-
-Always put `<!DOCTYPE html>` on the first line. This tells the browser what language it's reading (in this case, HTML). Always put `<html>` on the next line. This starts the HTML document. Always put `</html>` on the last line. This ends the HTML document.
-
-Typically the structure inside of the html tags is to have a head and body.
-
-```
-<!DOCTYPE html>
-
-<html>
-  <head>
-    <title>This is a title</title>
-  </head>
-  <body>
-    <p>Hello world!</p>
-  </body>
-</html>
-```
-
-We can add a heading using: `<h1>Lecture 1</h1>`
-
-We can add a link to another website using: `<a href="http://www.google.com/">A Link to Google!</a>`
-
-We can also add an image `<img src="http://bit.ly/1xc1L0u"/>`
-
-How about an unordered list of colors:
-```
-<ul>
-  <li>Red</li>
-  <li>Blue</li>
-  <li>Green</li>
-  <li>Purple</li>
-</ul>
-```
-
-There are many more HTML elements to explore and use. Find a complete list [here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
-
-<hr>
-
-###Let's start styling this web page###
-
-In the head section of the page, we are going to open a new set of tags called style. Everything inside of these brackets will be the CSS language, not the HTML language.
-
-![Example](http://bit.ly/13s9rh5)
-
-Let's make the background of this page grey. To do that we need to have:
-
-```
-<style>
-  body {
-    background-color: grey;
-  }
-</style>
-```
-<hr>
-
-###Mini Exercise###
-Let's say we want to make the h1 heading centered and red. How would we do that?
-
-<hr>
-
-####Specification####
-
-Let's say we have another list of names:
-```
-<ul>
-  <li>Shaan</li>
-  <li>Gamal</li>
-  <li>Malika</li>
-</ul>
-```
-and we want to wrap this list in a black box. How can we specify this list and not the list of colors. We can add an id to this `<ul>` and make it `<ul id="teachers">`
-
-Now in our CSS, we can specify:
-```
-#teachers {
-  border: 1px solid black;
+int main() {
+  cout << "Hello, world" << endl;
+  return 0;
 }
 ```
-<hr>
-###Organization###
-Let's move our CSS out of this file and into a file that is meant to only hold CSS.
-Create a new file in your text editor called `style.css`. Copy over everything inside the `<style>` tag into the new file.
 
-Now, remove the `<style>` tag and instead put `<link rel="stylesheet" name="text/css" href="style.css">`
+Ruby equivalent
+```
+puts "Hello, world"
+```
 
-So now we have a HTML file and a CSS file.
+**Stepping stone for Ruby on Rails**
 
-<hr>
+Rails is a software framework for creating web applications. Ruby is a language. Ruby on Rails is a framework that uses and depends on the Ruby programming language. Think of a framework as a collection of pre-written code to help programmers. In this case, the Rails framework is a collection of pre-written code to help programmers make websites and web applications.
+
+Learning Ruby is a prerequisite to learning Ruby on Rails. You’ll be one step closer to creating web applications like Twitter, Yellow Pages, Hulu, or Groupon.
+
+**$$$**
+
+[BusinessInsider](http://www.businessinsider.com/best-tech-skills-resume-ranked-salary-2014-11) ranked the most common programming languages based on the average annual salary. And Ruby on Rails is the highest at $109,460.
+
+**Community**
+
+There is so much documentation, existing code, pre-written frameworks, resources, and community members who are very active. Why spend time reinventing the wheel when someone else has already done it for you? Ruby even has its own system to manage frameworks and libraries, called RubyGems. There are currently over 60,000 libraries to choose from! The Ruby community is filled with generous developers who enjoy helping out. Be sure to contribute once you’re more experienced.
+
+##Let's get started##
+
+We'll be using [Nitrous](nitrous.io.), which is a cloud application platform that helps you create and configure the infrastructure and services for complex web applications in just seconds. This allows all of us to be working with the same version of software and same operating system to reduce any headaches.
+
+Steps
+
+1. Go to https://www.nitrous.io/
+2. Sign up for free
+3. Confirm your email
+4. Open Dashboard
+5. Create a new box
+6. Choose the Ruby/Rails template
+7. Name your box whatever you wish
+8. Leave the other default settings
+9. Click Create Box
+10. Wait as it provisions and starts your new IDE
+
+###IRB###
+
+Now that we know what the command line looks like and how it works, we're going to use a program called IRB, or Interactive Ruby, to start coding in Ruby without writing a formal program yet. IRB is a REPL for programming in Ruby, that is, Read-evaluate-print loop.
+
+Computer programs of all sorts, including spreadsheets, text editors, calculators, and chat clients, work with data. Tools to work with various data types are essential part of a modern computer language. A data type is a set of values, and the allowable operations on those values.
+
+Here are some examples that demonstrate the basics of Ruby datatypes:
+
+**Fixnum** (Integer)
+```
+irb(main):009:0> 3
+=> 3
+irb(main):009:0> 3.class
+=> Fixnum
+```
+
+**Float** (Decimal)
+```
+irb(main):009:0> 3.4
+=> 3.4
+irb(main):009:0> 3.4.class
+=> Float
+```
+
+**String**
+```
+irb(main):009:0> "Shaan"
+=> "Shaan"
+irb(main):009:0> "Shaan".class
+=> String
+```
+
+**Symbol**
+```
+irb(main):009:0> :math
+=> :math
+irb(main):009:0> :math.class
+=> Symbol
+```
+
+**True/False Classes** (Boolean)
+```
+irb(main):009:0> true
+=> true
+irb(main):009:0> true.class
+=> TrueClass
+irb(main):009:0> false
+=> false
+irb(main):009:0> false.class
+=> FalseClass
+```
+
+**Using true/false values in control flow**:
+```
+if <expression>
+  some_code_here
+else
+  do_this_other_thing
+end
+```
+
+**nil**
+```
+irb(main):009:0> nil
+=> nil
+irb(main):009:0> nil.class
+=> NilClass
+```
+
+More examples of expressions:
+
+**Variables:**
+```
+irb(main):001:0> a = 5
+=> 5
+irb(main):002:0> a
+=> 5
+```
+
+**Operations:**
+```
+irb(main):003:0> 2.1 + 4.2
+=> 6.3
+irb(main):004:0> 0 / (1 + 9)
+=> 0
+irb(main):005:0> 3 < 1
+=> false
+irb(main):006:0> 8 == 8
+=> true
+irb(main):008:0> a = 5
+=> 5
+irb(main):008:0> a.even?
+=> false
+```
+
+**Playing with strings:**
+```
+irb(main):010:0> my_string = "Hello world"
+=> "Hello world"
+irb(main):010:0> my_string.length
+=> 11
+irb(main):010:0> "hi shaan".capitalize
+=> "Hi Shaan"
+irb(main):011:0> "first" + "class"
+=> "firstclass"
+irb(main):012:0> name = "John"
+=> "John"
+irb(main):013:0> "My name is #{name}"
+=> "My name is John"
+irb(main):014:0> 'My name is #{name}'
+"My name is \#{name}"
+```
+
+##Let's write some Ruby##
+
+Open your text editor and create a new file called first.rb. The file ends with the rb extension which lets the Ruby interpreter know that this is a Ruby file.
+
+Let's add some code that prints our name: `puts "Shaan"`
+
+We can run the file in the command prompt by running the ruby command and then naming the location of the file. If we navigate to the root directory, we can run it by typing: `ruby first.rb`.
+
+We will see the output in the terminal as well since puts is a command that prints the output to the terminal.
+
 
 ##To Do For Thursday##
 
-1. Download a text editor on your personal computer if you don't have one.
-  * [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com/), [Textmate](http://macromates.com/)
-2. Open the command prompt on your own computer and practice a few commands.
-  * Extra [material](http://www.codecademy.com/blog/72-getting-comfortable-in-the-terminal-linux) from CodeAcademy for **Linux**
-3. Practice HTML/CSS
-  * [Shaw Howe's  Tutorials](http://learn.shayhowe.com/html-css/building-your-first-web-page/): Highly recommended
-  * [CodeAcademy Lesson](http://www.codecademy.com/tracks/web): If you have time
-  * [Odin Project](http://www.theodinproject.com/web-development-101/html-and-css-basics): Bonus material
+Practice Ruby
+* [TryRuby.org](http://tryruby.org/levels/1/challenges/0): Short and sweet
+* [CodeAcademy Lesson](http://www.codecademy.com/en/tracks/ruby): If you have time
+* [Odin Project](http://www.theodinproject.com/ruby-programming/ruby-building-blocks): Bonus material
