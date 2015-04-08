@@ -52,10 +52,14 @@ def print_my_name()
 end
 ```
 
-Notice that there are no arguments for this method, so I've left the parentheses empty. Typically, Ruby programmers will leave out the parentheses.
+Let's go ahead and run our program. Do you see the output? If not, check if you **called** the method. If you want to see output, not only do you have to **define** your methods, but you have to **call** them. Make the changes to your own code to have your own name printed out.
+
+> Notice that I have defined this method with no arguments. This is how I have chosen to design this method. I could have left the parentheses empty as well. Typically, Ruby programmers will leave out the parentheses.
 
 
 <hr>
+
+###Adding an argument to our method
 
 Let's change our method to be a bit more dynamic and take an argument.
 
@@ -69,7 +73,7 @@ If we call this method without supplying a value, what will happen?
 
 We will see this error: `ArgumentError: wrong number of arguments (0 for 1)`
 
-This error gives us all the information that we need to understand what is wrong. The method expects a single argument, but we passed 0 arguments. If we call it now with 1 argument, we'll see it work. Try this:
+This error gives us all the information that we need to understand what is wrong. The method expects a single argument, but we passed 0 arguments. If we call this method with 1 argument, we'll see it work. Try this:
 
 ```
 print_my_name("Gamal")
@@ -89,8 +93,45 @@ end
 ```
 Assume that `it_is_raining` is a variable holding either a true or false value. If the variable has the value true, then the first statement block is executed and then it jumps to the end. If the variable is not true, or false, then the second block is executed and then it jumps to the end.
 
+###Mini Exericse
 
-###Mini Exercises###
+```
+people = 30
+cars = 40
+trucks = 15
+
+
+if cars > people
+  puts "We should take the cars."
+elsif cars < people
+  puts "We should not take the cars."
+else
+  puts "We can't decide."
+end
+
+if trucks > cars
+  puts "That's too many trucks."
+elsif trucks < cars
+  puts "Maybe we could take the trucks."
+else
+  puts "We still can't decide."
+end
+
+if people > trucks
+  puts "Alright, let's just take the trucks."
+else
+  puts "Fine, let's stay home then."
+end
+```
+
+**Discuss with the person next to you what the output should be. Once you've decided, copy this code into a new file, save it, and run the file. Confirm the output is what you thought.**
+
+####Bonus Material
+> What happens if multiple elsif blocks are true?
+
+Ruby starts and the top runs the first block that is true, so it will run only the first one.
+<hr>
+###More Mini Exercises###
 
 >Write a method that takes in **2** parameters (your first and last name) and prints the full name
 
