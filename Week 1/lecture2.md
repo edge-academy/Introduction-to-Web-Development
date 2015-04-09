@@ -145,4 +145,8 @@ Example: `print_longer("dog", "horse") # => "horse"`
 
 Example: `print_bigger(3, 4) # => 4`
 
+>Write a method that takes in **3** parameters (month, day, year) and print the date in this format "mm/dd/year".
+
+Example: We can call the method with `print_date(04, 18, 1993)` and the output would be `"04/18/1993"`.
+
 <hr>
