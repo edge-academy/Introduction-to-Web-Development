@@ -2,7 +2,7 @@
 # sorts them, and prints them in a single line, joined by a comma
 
 def print_ordered_strings(names_array)
-  # write your code here
+  p names_array.sort.join(", ")
 end
 
 example_names = ["Smith", "Boone", "Jane", "Charles", "Jennifer", "Rob"]
@@ -17,7 +17,8 @@ print_ordered_strings(example_names)
 # Hints: Use a range (0..100) and use the each method.
 
 def print_neg_nums
-  # write your code here
+  p (-100..0).to_a
+  # or p (0..100).map {|x| -1 * x }.sort
 end
 
 print_neg_nums
@@ -29,7 +30,11 @@ print_neg_nums
 # adds them up and prints the sum
 
 def sum(numbers)
-  # write your code here
+  count = 0
+  numbers.each do |number|
+    count += number
+  end
+  puts count
 end
 
 my_array = [1,2,3,4]
@@ -40,10 +45,17 @@ sum(my_array)
 ################################################################################
 
 # Write a method that takes 2 parameters, a list of integers and a integer.
-# Print true if the number appears in the array and false otherwise
+# Return true if the number appears in the array and false otherwise
 
 def belongs_in_array(arr, num)
-  # write your code here
+  arr.each do |thing|
+    if thing == num
+      puts true
+      return
+    end
+  end
+  puts false
+  # or puts arr.include?(num)
 end
 
 numbers = [1, 3, 5, 7, 9, 11]
@@ -62,7 +74,8 @@ belongs_in_array(numbers, num)
 # method instead of puts.
 
 def inc_by_2(numbers)
-  # write your code here
+  p numbers
+  p numbers.map {|x| x + 2 }
 end
 
 array = [-3, 0, 54, 10]
