@@ -181,7 +181,7 @@ ActiveRecord::RecordNotFound in MoviesController#show
 Couldn't find Movie with 'id'=new
 ```
 
-This error happened because Rails was trying to find the first route that matched what was typed and it does this matching from top to bottom in the routes file. When it compared the route 'movies/:id' to what we entered 'movies/new', it thought that the id parameter should be the characters new. We have 2 options to get around this: move our new route higher in the list or rename our route to remove any conflict. Let's rename our route to make it a bit easier.
+This error happened because Rails was trying to find the first route that matched what was typed and it does this matching from top to bottom in the routes file. When it compared the route 'movies/:id' to what we entered 'movies/new', it thought that the id parameter should be the characters new. We have 2 options to get around this: move our new route higher in the list or rename our route to remove any conflict. Let's just move the route up.
 ```
 get '/movies/new' => 'movies#new'
 ```
@@ -190,7 +190,7 @@ Let's add some HTML to create a form so that we can submit movie details.
 <h1>New Movie</h1>
 <form action="/movies/create">
   <label>Name</label>
-  <input type="text" desc="name"/>
+  <input type="text" name="name"/>
 </form>
 ```
 
@@ -230,7 +230,7 @@ We also need to specify the type of form we want in the HTML.
 <form action="/movies" method="post">
   <label>Name</label>
   <input type="text" name="name"/>
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
 ```
 
