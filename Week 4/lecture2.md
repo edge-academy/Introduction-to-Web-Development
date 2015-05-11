@@ -61,7 +61,16 @@ When we open up the movie model (app/models/movie.rb), we can see that the class
 
 
 ##IRB -> Rails Console##
-Back in the day (2 weeks ago) we used IRB to play with ruby syntax and even load classes so that we could create objects and call methods on them. Rails provides a console where we can access the models defined in the database and create/update/destroy them as we please. Let's try it out.
+Back in the day (2 weeks ago) we used IRB to play with ruby syntax and even load classes so that we could create objects and call methods on them. Rails provides a console where we can access the models defined in the database and create/update/destroy them as we please. Let's try it out. We can enter the console by typing
+
+```
+rails console
+```
+
+If you see an error, you might not be running the command at the right location. Make sure you `cd` into the application directory. You should see something like this if it worked:
+```
+Loading development environment (Rails 4.1.0)                                                                                                                                                                        irb(main):001:0>
+```
 
 If you type:
 

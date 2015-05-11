@@ -11,12 +11,12 @@ I've created a Rails application that all of you can download and so that everyo
  * Index, Show, New and Create routes already defined
  * Movies controller filled out
  * Index, Show, and New views are filled out
- * Form is built using form helper methods ([read more](http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for))
-   * form_for
-   * label
-   * text_field
-   * number_field
-   * submit
+ * Form is built using form tag helper methods ([read more](http://guides.rubyonrails.org/form_helpers.html))
+   * form_tag
+   * label_tag
+   * text_field_tag
+   * number_field_tag
+   * submit_tag
  * Bootstrap is used for quick and easy styling
  * Seeds file has easy data to 'seed' the database
  * Movie class has validations on attributes
@@ -84,44 +84,47 @@ Our goal tonight is to finish up the last 3 actions so that we can update or del
 
 ###Edit###
 
-Let's say we want to build a route to an edit page for a particular movie. We can add such a link to our table of movies on the index page:
+Let's say we want to build a route to an edit page for a particular movie. We can add such a paragraph with that link to our table of movies on the index page:
 
-```
+```ruby
 <%= link_to("Edit", "/movies/#{movie.id}/edit") %>
 ```
+
 If we click on it, we see the familiar Routing Error claiming the route could not be found. In order to support this route, let's go the routes file and add:
 
-```
+```ruby
 get "/movies/:id/edit" => 'movies#edit'
 ```
 
 Next, we add the edit action to the movies controller,
-```
+
+```ruby
 def edit
   @movie = Movie.find(params[:id])
 end
 ```
 
-Notice how similar this is to the show action.
+Notice how similar this is to the new action.
 
-Now we want to render a new form that allows the user to update the values of the specific object. Let's copy the new form, but change a few things.
+Now we want to render a form that allows the user to see a pre-filled form with all the current values of this particular movie and be able to update the values of the movie. Let's copy the new form, but change a few things.
 
 
-1. Here we change the method from post to patch to follow the conventions.
-```
-<%= form_for @movie, {method: "patch"} do |f| %>
+1. Here we change the url that this form needs to point to. Since this form is going to be handled by the update action, we need to define a url for that.
+ruby
+```ruby
+<%= form_tag "/movies/#{@movie.id}" , method: :patch do %>
 ```
 
 2. Notice that we need a new route to support this url.
-```
+```ruby
 patch "/movies/:id" => 'movies#update'
 ```
 
 3. We also notice that the values of this movie are not showing in the input fields. We can go ahead and fill them in accordingly.
+```ruby
+<%= text_field_tag 'movie[name]', @movie.name, class: "form-control" %>
 ```
-<%= f.text_field :name, @movie.name, class: "form-control" %>
-```
-Instead of the empty string as the value, we can specify the current value of the movie.
+Instead of nil as the value, we can specify the current value of the movie.
 
 Now we need to define what the update action will look like in the movies controller.
 
@@ -130,12 +133,7 @@ Now we need to define what the update action will look like in the movies contro
 ```
 def update
   movie = Movie.find(params[:id])
-  move.name = params[:name]
-  movie.director = params[:director]
-  movie.genre = params[:genre]
-  movie.year = params[:year]
-  movie.image_url = params[:image_url]
-  movie.save
+  movie.update_attributes(movie_params)
   redirect_to "/movies/#{movie.id}"
 end
 ```
@@ -146,7 +144,7 @@ The typical way to destroy an object is to send a DELETE request to the server a
 
 To specify a DELETE request rather the default GET request,
 ```
-<%= link_to("Delete", "/movies/#{@movie.id}", {:method => :delete}) %>
+<%= link_to("Delete", "/movies/#{@movie.id}", method: :delete) %>
 ```
 
 We can put this link in the show page or even in the table of the index page.
@@ -166,6 +164,3 @@ end
 ```
 
 Now let's try it.
-
-####Extra topics
-* rendering a view instead of repeating code
