@@ -157,3 +157,4 @@ Once you get all the tests to pass, try to simplify your code while keeping all 
 * equivalently, `split` works similarly. Make sure your parameter is correct if you use `split`
 * useful Enumerable methods for iterating over an array: `select`, `each`, `each_with_index`, `map`
 * use **Google**
+* For the last test, you want to raise an error if any string contains an invalid letter. Check out the method gsub: http://apidock.com/ruby/String/gsub
