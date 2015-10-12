@@ -42,3 +42,16 @@ All of those can be expanded into even smaller sets:
 And even these can be expanded into further smaller sets. Our job is to pick or develop technologies that will satisfy a certain goal.
 
 **RoR fits into the Server layer**
+
+##Questions! Questions! Exercise!##
+
+Our stack is going to look like this for now, and we'll add things to it in the future:
+
+###Backstack###
+1. Server
+2. Rails
+3. Ruby
+
+###Frontstack###
+3. Ruby
+4. HTML/JS/CSS
