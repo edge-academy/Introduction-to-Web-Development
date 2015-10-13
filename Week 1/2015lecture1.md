@@ -100,3 +100,25 @@ git push origin master - actually puts the files from the origin branch into the
 ```
 
 No other commands are necessary for this class except for the Rails specific ones.
+
+Today we are going to make a new application. Go to a clean directory, create a new folder, and type:
+
+```
+rails new "name of app"
+```
+This should create a ton of stuff in a folder with the name you provided. Go into the directory and run:
+
+```
+rails server
+```
+Once you do, you should get a similar output to:
+
+```
+=> Booting WEBrick
+=> Rails 4.1.8 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
+```
+
+You'll want to open a web browser at this point and go to "localhost:3000" and you'll see a very welcoming page telling you that you have successfully created your first Rails app. 
