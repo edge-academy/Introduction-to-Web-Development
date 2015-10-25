@@ -11,3 +11,5 @@ We didn't really go over any of these at all, so lets do that finally:
 So when we ask for the home page, Rails finds the controller that will give us back the view for the home page. Looking at the console we can see that the web page returned a default page. We want to get to a point where we can define our own pages.
 
 We need three things for this: a controller, a view, and a route. A route tells Rails where to find the controller and the view.
+
+Today we 
