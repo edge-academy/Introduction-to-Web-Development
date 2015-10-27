@@ -1,3 +1,45 @@
+#Lecture 3#
+
+##Types##
+There are two typing schemes that I want to introduce today, static and dynamic typing.
+
+Dynamic and static typing are a lot like the difference between college and diffusing a bomb. In college you kind of figure things out along the way, things might change -that's okay- and everything just sort of works out in the end. If you do that with a bomb, you're going to have a bad time. With a bomb, you need to know exactly what you're doing before you touch it, and if one instruction is wrong, the entire thing blows up.
+
+Dynamic typing is like college. The computer figures out what is happening as the program is going. Static typing is like diffusing a bomb where the computer needs to know exactly what everything is before proceeding. And this is all in reference to how to represent something.
+
+So we know Ruby is a dynamically typed language right? When you do an assignment:
+
+```
+x = 5
+```
+
+We know that "x" is a number. But we never say something like:
+```
+x is a number. let x = 5
+```
+The above would be static typing. We tell the computer exactly what x should be, it's *type*, and what its value is. In some languages like C or C#, this is necessary. In C# you would have to do:
+
+```
+int x = 5;
+```
+So C# and C are statically typed languages. Before you hit that big go button, you need to tell the computer what it is. In Ruby, the computer *infers* what things are. And sometimes there are exceptions but for the most part, this is what happens. And some languages mix them. A Class is a type, a class is actually a complex type, so when we say:
+
+```
+x = Car.new
+```
+We ARE giving "x" a type. A class type. But that is because it is an object. So in the cases of objects we need types, with *atomic* types such as numbers and strings and arrays, we don't.
+
+##Kinds of Types##
+1. Integer: 5
+2. Double: 5.27
+3. Array: [2,5,223]
+4. String: "hello"
+5. Boolean: True, False
+
+And depending on the language you'll have different kinds of types.
+
+##Back to Rails##
+
 So last time we did some stuff with routes. We saw that we needed three things, a model, a view and a controller.
 
 We didn't really go over any of these at all, so lets do that finally:
@@ -12,4 +54,4 @@ So when we ask for the home page, Rails finds the controller that will give us b
 
 We need three things for this: a controller, a view, and a route. A route tells Rails where to find the controller and the view.
 
-Today we 
+Today we will be generating models. There is a console. It is just like the prompt you are running at your terminal that allows you to type cd and ls.
