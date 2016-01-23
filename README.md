@@ -84,6 +84,10 @@ git pull
 ```
 This will update all of the files in your app with the changes. **Note**: Git is not magical. What if you have 20 repositories on your computer? Would you expect git to know what code base you are referring to? No. And it doesn't. Git only works inside of a folder with a ".git" folder. Everything it says will be in reference to THAT code base. You can't do a Git pull from your Desktop. What would that even mean?
 
+## IMDB ##
+
+If you miss a day, that should be okay. The app we are building is available [here](https://github.com/gadeweever/2016-intro-web/tree/master/imdb). You can look at the change-list [here](https://github.com/gadeweever/2016-intro-web/commits/master). This tells you all of the files we added that day, as well as what we put in them. If you want to see the full contents of the file, just browse the repository. If time permits, I will update the readme with what we are doing. If you miss a day, refer to the two former links or email me to setup a time to figure stuff out.
+
 ## Concerns? ##
 
 Email me. Facebook me. Facebook is faster.
